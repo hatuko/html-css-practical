@@ -1,0 +1,140 @@
+body {
+  color: #000000;
+  background-color: #ffffff;
+  font-family: 'Noto Sans JP', sans-serif;
+  margin: 0;
+}
+
+
+/* header */
+header {
+  color: #000000;
+  display: flex;
+  max-width: 960px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+h1 a {
+  border: 1px solid black;
+  color: #000000;
+  font-size: 34px;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 34px;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+/* カメラ画像 */
+#image-main img {
+  width: 100%;
+}
+
+
+/* about */
+.about-contents {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 960px;
+}
+
+#content {
+  margin: 0 auto;
+  padding: 0 20px;
+  font-size: 20px;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#about {
+  font-size: 34px;
+  text-align: center;
+  margin: 70px;
+}
+
+.photo {
+  border-radius: 140px 140px 140px 140px;
+}
+
+
+/* works */
+section.works {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#works {
+  font-size: 34px;
+  text-align: center;
+  margin: 70px;
+}
+
+.works-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  width: 30%;
+}
+
+.item img {
+  width: 100%;
+  
+}
+
+/* footer */
+footer {
+  font-size: 18px;
+  text-align: center;
+  padding: 20px;
+}
+
+/* 最大767px*/
+@media screen and (max-width:767px) {
+
+  nav ul {
+    font-size: 10px;
+  }
+
+ nav ul a {
+  font-size: 21px;
+ }
+  #about {
+    margin: 40px auto;
+  }
+
+  .photo {
+    margin: auto;
+  }
+
+  #works {
+    margin: 40px;
+  }
+
+  .works-flex {
+    display: block;
+  }
+
+  
+  .item {
+    width: 80%;
+    margin: 0 auto;
+}
+}
